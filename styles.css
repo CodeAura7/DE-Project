@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: blue;
+}
+
+/* Banner Section */
+#banner {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section Spacing */
+#featured-books, #categories, #contact {
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Search Options Section for categories.html */
+#search-options {
+    padding: 20px;
+    text-align: center;
+}
+
+.search-methods {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.search-option {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.search-option h3 {
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.search-option ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-option ul li {
+    margin: 10px 0;
+}
+
+.search-option ul li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.search-option ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-option input[type="text"] {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-option select {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.search-option select:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.search-option button {
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-option button:hover {
+    background-color: darkblue;
+}

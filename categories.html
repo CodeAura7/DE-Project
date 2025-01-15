@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse book categories by genre, author, or book name to find your next read.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Categories</title>
+</head>
+<body>
+    <header>
+        <h1>Book Categories</h1>
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-options">
+            <h2>Select by Genre, Author, or Book Name</h2>
+            <div class="search-methods">
+                <div class="search-option">
+                    <h3>Select by Genre</h3>
+                    <select name="genre" id="genre">
+                        <option value="" disabled selected>Choose a Genre</option>
+                        <option value="science">Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="literature">Literature</option>
+                    </select>
+                    <button type="button">Search</button>
+                </div>
+
+                <div class="search-option">
+                    <h3>Search by Author</h3>
+                    <input type="text" placeholder="Enter author name" aria-label="Author name">
+                    <button type="button">Search</button>
+                </div>
+
+                <div class="search-option">
+                    <h3>Select by Book Name</h3>
+                    <select name="book-name" id="book-name">
+                        <option value="" disabled selected>Choose a Book</option>
+                        <option value="understanding-computers">Understanding Computers - 5th Edition</option>
+                        <option value="introduction-data-science">Introduction to Data Science</option>
+                        <option value="advanced-mathematics">Advanced Mathematics for Engineers</option>
+                        <option value="art-programming">The Art of Programming</option>
+                    </select>
+                    <button type="button">Search</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Book Rental Service</p>
+    </footer>
+</body>
+</html>

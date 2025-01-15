@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Book Rental Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script>
+        function redirectToIndex(event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+            const userId = document.getElementById('userId').value;
+            const password = document.getElementById('password').value;
+
+            if (userId === 'ckpcet' && password === '123456') {
+                alert('Login Successful!');
+                window.location.href = 'index.html'; // Redirect to index.html
+            } else {
+                alert('Invalid ID or Password. Please try again.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-label="Home page">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="signup-section">
+            <h2>Login</h2>
+            <form onsubmit="redirectToIndex(event)">
+                <label for="userId">ID:</label>
+                <input type="text" id="userId" name="userId" placeholder="Enter your ID" required><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+                
+                <input type="submit" value="Login"><br><br>
+            </form>
+            <p style="font-size: small;">New user? <a href="signup.html">Sign Up</a></p>
+        </section>
+    </main>
+</body>
+</html>
